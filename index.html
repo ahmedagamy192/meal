@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="food , healthy food , meat , chiecken,fish,salad, pizza ,vegetables">
+    <meta name="description" content="food , healthy food , meat , chiecken,fish,salad, pizza" >
+    <title>Sa'a Li-Batnak Restaurant</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    </head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <div class="container">
+    
+    <div class="d-flex justify-content-between align-items-center w-100">
+      <a class="navbar-brand d-flex align-items-center gap-3" href="#">
+        <span class="text-white bg-orange px-2 py-1 rounded">
+          <i class="fa-solid fa-utensils"></i>
+        </span>
+        <div>
+          <p class="h5 mb-0">What's For Dinner</p>
+          <p class="small text-muted mb-0">Your daily meal inspiration</p>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMobileMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarMobileMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-3 py-3 py-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-thumbtack fs-4"></i></a></li>
+        <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-clock-rotate-left fs-4"></i></a></li>
+        <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-gear fs-4"></i></a></li>
+        <li class="nav-item"><a class="nav-link" href="#"><img src="images/avatar-2.jpg" alt="User" class="rounded-circle" width="32" height="32"></a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+
+ <!-- navbar -->
+
+ <!-- hero section -->
+ <section class="hero my-3">
+    <div class="container">
+        <div class="row">
+            <div class=" col-md-12 col-lg-6 meal position-relative">
+                <img src="images/meal1.jpg" alt="meal" class="image-meal">
+                <div class="meal-information d-flex justify-content-evenly">
+                   <div class="meal-information-prepTime d-flex flex-column">
+                   <span class="text-white bg-orange"><i class="fa-solid fa-clock-rotate-left"></i></span>
+                   <p class="text-muted">Prep Time</p>
+                   <p class="fw-bold"  id="prepTime">15 min</p>
+                   </div>
+                   <div class="meal-information-cockTime">
+                    <span class="text-danger bg-w-icon fs-3"><i class="fa-solid fa-fire-burner"></i></span>
+                   <p class="text-muted">Cook Time</p>
+                   <p class="fw-bold" id="cockTime">60 min</p>
+                   </div>
+                   <div class="meal-information-services">
+                    <span class="text-primary bg-w-icon fs-3"><i class="fa-solid fa-arrows-down-to-people"></i></span>
+                   <p class="text-muted">Servings</p>
+                   <p class="fw-bold" id="services">4 people</p>
+                   </div>
+
+                </div>
+                <div class="rate">
+                    <span class="c-gold"><i class="fa-solid fa-star"></i></span>
+                    <span id="star">4.8</span><span id="review">(234 reviews)</span>
+                </div>
+                
+            </div>
+
+            <div class=" col-md-12 col-lg-6 meal-details my-2 position-relative">
+                <div>
+                    <span class="meal-details-span1">Intermediate</span>
+                    <span class="meal-details-span2">Mediterranean</span>
+                </div>
+                <div class=" meal-name d-flex justify-content-between my-3">
+                    <h2 id="title">Greek Moussaka</h2>
+                    <div class=" meal-name-btns">
+                     <button class=" meal-name-btn"><span class="fs-4"><i class="fa-solid fa-thumbtack"></i></span></button>
+                     <button class=" meal-name-btn"><span class="fs-4"><i class="fa-solid fa-share-nodes"></i></span></button>
+                    </div>
+                </div>
+                <p class="text-muted fs-5" id="descrpition">Traditional layered eggplant casserole with lamb</p>
+
+                <!-- navbar and taps -->
+                 <!-- Nav tabs  -->
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#ingredients" type="button" role="tab" aria-controls="home" aria-selected="true">ingredients</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#Instructions" type="button" role="tab" aria-controls="profile" aria-selected="false">Instructions</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="messages-tab" data-bs-toggle="tab" data-bs-target="#Nutrition" type="button" role="tab" aria-controls="messages" aria-selected="false">Nutrition</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#Chef" type="button" role="tab" aria-controls="settings" aria-selected="false">Chef's Tips</button>
+  </li>
+</ul>
+
+ <!-- Tab panes  -->
+<div class="tab-content mt-3">
+  <div class="tab-pane active" id="ingredients" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+    <ol id="ingredients-list" class="ps-3"></ol>
+  </div>
+  
+  <div class="tab-pane" id="Instructions" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+    <ol id="instructions-list" class="ps-3"></ol>
+  </div>
+  
+  <div class="tab-pane" id="Nutrition" role="tabpanel" aria-labelledby="messages-tab" tabindex="0">
+    <div class="row text-center mt-2 g-3 ">
+      <div class="col-sm-12 col-md-6">
+        <div class="nutrition-card">
+        <span class="nutri-icon bg-orange-light text-orange"><i class="fa-solid fa-fire"></i></span>
+        <div class="nutri-text">
+          <p class="nutri-label">Calories</p>
+          <p class="nutri-value" id="calories-val">480 kcal</p>
+        </div>
+      </div>
+      </div>
+      <div class="col-sm-12 col-md-6">
+         <div class="nutrition-card">
+        <span class="nutri-icon bg-yellow-light text-yellow"><i class="fa-solid fa-wheat-awn"></i></span>
+        <div class="nutri-text">
+          <p class="nutri-label">Carbohydrates</p>
+          <p class="nutri-value" id="carbs-val">48g</p>
+        </div>
+      </div>
+      </div>
+       <div class="col-sm-12 col-md-6">
+          <div class="nutrition-card">
+        <span class="nutri-icon bg-green-light text-green"><i class="fa-solid fa-seedling"></i></span>
+        <div class="nutri-text">
+          <p class="nutri-label">Fiber</p>
+          <p class="nutri-value" id="fiber-val">6g</p>
+        </div>
+      </div>
+       </div>
+      
+      <div class="col-sm-12 col-md-6">
+        <div class="nutrition-card">
+        <span class="nutri-icon bg-blue-light text-blue"><i class="fa-solid fa-dumbbell"></i></span>
+        <div class="nutri-text">
+          <p class="nutri-label">Protein</p>
+          <p class="nutri-value" id="protein-val">22g</p>
+        </div>
+      </div>
+      </div>
+      <div class="col-sm-12 col-md-6">
+         <div class="nutrition-card">
+        <span class="nutri-icon bg-red-light text-red"><i class="fa-solid fa-droplet"></i></span>
+        <div class="nutri-text">
+          <p class="nutri-label">Fat</p>
+          <p class="nutri-value" id="fat-val">22g</p>
+        </div>
+      </div>
+      </div>
+        
+      <div class="col-sm-12 col-md-6">
+        <div class="nutrition-card">
+        <span class="nutri-icon bg-pink-light text-pink"><i class="fa-solid fa-cube"></i></span>
+        <div class="nutri-text">
+          <p class="nutri-label">Sodium</p>
+          <p class="nutri-value" id="sodium-val">680mg</p>
+        </div>
+      </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  <div class="tab-pane" id="Chef" role="tabpanel" aria-labelledby="settings-tab" tabindex="0">
+    <ul class="list-unstyled" id="chef-list"></ul>
+  </div>
+   <div class="random-meal d-flex justify-content-center mt-5">
+  <button class="chosse-btn" id="random-btn">Try Another Recipe</button>
+</div>
+</div>
+               
+           
+   </div> 
+
+  </div>
+</div>
+
+ </div>     
+  </div>
+ </div>
+ </section>
+
+ <!-- hero section
+ -->
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+   <script type="module" src="js/index.js"></script>
+</body>
+</html>
+
+
+
