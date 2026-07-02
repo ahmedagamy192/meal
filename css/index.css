@@ -4,7 +4,6 @@
     --color-orange: #ff5800;
     --color-main:#FFFBEA;
       --main-bg: #fffbf4;
-      --orange-accent: #ff5800;
       --text-dark: #1e293b;;
     --text-muted: #64748b;
     --bg-card: #f8fafc;
@@ -177,7 +176,7 @@ align-items: center;
       box-shadow: 0 5px 15px rgba(0,0,0,0.08);
     }
     .meal-selector-card.active-meal {
-      border-color: var(--orange-accent);
+      border-color: var(--color-orange);
       background-color: #fff9eb;
     }
 
@@ -207,12 +206,12 @@ align-items: center;
       left: 0;
       width: 100%;
       height: 3px;
-      background-color: var(--orange-accent);
+      background-color: var(--color-orange);
       border-radius: 2px;
     }
 
     .num-badge {
-      background-color: var(--orange-accent);
+      background-color: var(--color-orange);
       color: white;
       width: 28px;
       height: 28px;
