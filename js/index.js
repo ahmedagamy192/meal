@@ -121,6 +121,10 @@ let cockTime = document.getElementById("cockTime");
 let services = document.getElementById("services");
 let review = document.getElementById("review");
 let star = document.getElementById("star");
+let prevBtn = document.getElementById("prev-btn");
+let nextBtn = document.getElementById("next-btn");
+console.log(prevBtn,nextBtn)
+
 
 /////
 let ingredientsList = document.getElementById("ingredients-list");
@@ -201,3 +205,19 @@ randomBtn.addEventListener("click",function(){
      showMeal();
 })
 
+nextBtn.addEventListener("click",function(){
+   currentMeal++;
+   // اذا تم الوصول لنهاية المصفوفة تبدا من جديد
+   if(currentMeal > mealsData.length-1){
+    currentMeal = 0
+   }
+   showMeal()
+})
+
+prevBtn.addEventListener("click",function(){
+  currentMeal--
+  if(currentMeal < 0){
+    currentMeal = mealsData.length-1;
+  }
+  showMeal();
+})
