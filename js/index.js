@@ -2,7 +2,7 @@
 const mealsData = [
   {
     id: 0,
-    title: "Premium fish Burger",
+    title: "Premium meat",
     price: 14.5,
     icon: "fa-burger",
     rating: 4.0,

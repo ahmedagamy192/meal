@@ -104,22 +104,22 @@ body {
   left: 20px;
   right: 20px;
   background-color: rgba(255, 255, 255, 0.95);
-  padding: 15px 20px;
   border-radius: 15px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   width: 90%;
   margin: auto;
 }
 
-.-meal-information-prepTime p {
-  margin-bottom: 2px;
+.meal-information-prepTime p {
+  bottom: 2px 0;
+  padding: 2px 0;
 }
 
-.-meal-information-prepTime p.text-muted {
+.meal-information-prepTime p.text-muted {
   font-size: 0.75rem;
 }
 
-.-meal-information-prepTime p.fw-bold {
+.meal-information-prepTime p.fw-bold {
   font-size: 0.9rem;
 }
 
@@ -408,3 +408,7 @@ body {
 }
 
 /* تنسيق أزرار الـ Tabs */
+
+@media screen and (max-width:450px) {
+  .meal-information{display:none!important;}
+}

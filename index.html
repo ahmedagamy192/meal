@@ -75,31 +75,39 @@
     <section class="hero my-3">
       <div class="container">
         <div class="row">
-          <div class="col-md-12 col-lg-6 meal position-relative">
+          <div class="col-md-12 col-lg-6 meal position-relative overflow-hidden">
             <img src="images/meal1.jpg" alt="meal" class="image-meal" />
-            <div class="meal-information d-flex justify-content-evenly">
-              <div class="meal-information-prepTime d-flex flex-column">
-                <span class="text-white bg-orange"
-                  ><i class="fa-solid fa-clock-rotate-left"></i
-                ></span>
-                <p class="text-muted">Prep Time</p>
-                <p class="fw-bold" id="prepTime">15 min</p>
-              </div>
-              <div class="meal-information-cockTime">
-                <span class="text-danger bg-w-icon fs-3"
-                  ><i class="fa-solid fa-fire-burner"></i
-                ></span>
-                <p class="text-muted">Cook Time</p>
-                <p class="fw-bold" id="cockTime">60 min</p>
-              </div>
-              <div class="meal-information-services">
-                <span class="text-primary bg-w-icon fs-3"
-                  ><i class="fa-solid fa-arrows-down-to-people"></i
-                ></span>
-                <p class="text-muted">Servings</p>
-                <p class="fw-bold" id="services">4 people</p>
-              </div>
-            </div>
+          
+          <div class="meal-information d-flex justify-content-evenly text-center py-3">
+  
+  <!-- 1. Prep Time -->
+  <div class="meal-information-prepTime d-flex flex-column align-items-center">
+    <span class="text-white bg-orange d-inline-flex align-items-center justify-content-center mb-2" style="width: 2.5rem; height: 2.5rem; border-radius: 50%;">
+      <i class="fa-solid fa-clock-rotate-left"></i>
+    </span>
+    <p class="text-muted small mb-0">Prep Time</p>
+    <p class="fw-bold mb-0" id="prepTime">15 min</p>
+  </div>
+
+  <!-- 2. Cook Time -->
+  <div class="meal-information-cockTime d-flex flex-column align-items-center">
+    <span class="text-danger fs-4 d-inline-flex align-items-center justify-content-center mb-2" style="width: 2.5rem; height: 2.5rem; border-radius: 50%;">
+      <i class="fa-solid fa-fire-burner"></i>
+    </span>
+    <p class="text-muted small mb-0">Cook Time</p>
+    <p class="fw-bold mb-0" id="cockTime">60 min</p>
+  </div>
+
+  <!-- 3. Servings -->
+  <div class="meal-information-services d-flex flex-column align-items-center">
+    <span class="text-primary fs-4 d-inline-flex align-items-center justify-content-center mb-2" style="width: 2.5rem; height: 2.5rem; border-radius: 50%;">
+      <i class="fa-solid fa-arrows-down-to-people"></i>
+    </span>
+    <p class="text-muted small mb-0">Servings</p>
+    <p class="fw-bold mb-0" id="services">4 people</p>
+  </div>
+
+</div>
             <div class="rate">
               <span class="c-gold"><i class="fa-solid fa-star"></i></span>
               <span id="star">4.8</span><span id="review">(234 reviews)</span>
